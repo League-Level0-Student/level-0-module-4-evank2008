@@ -11,7 +11,7 @@ import processing.core.PImage;
  *    top level of this module. It can be anything as long as it has large eyes!
  * 
  * 2. Declare a variable for the image:
- *    PImage face;
+    PImage face;
  * 
  * 3. In your setup() method, import your image using the following code:
  *    face = loadImage("face.jpg");
@@ -41,20 +41,25 @@ public class GooglyEyes extends PApplet {
     static final int HEIGHT = 600;
     
     PImage face;
-    
+   
     @Override
     public void settings() {
-        size(WIDTH, HEIGHT);
+        size(800,600);
     }
     
     @Override
     public void setup() {
-
+    	
+    	face = loadImage("face.jpg");
+    	 face.resize(800,600);
+    	 background(face);
     }
 
     @Override
     public void draw() {
-
+    	fill(255,255,255);
+    	ellipse(463,306,100,100);
+    	//right = 463, 306 left = 351, 307
     }
 
     static public void main(String[] args) {

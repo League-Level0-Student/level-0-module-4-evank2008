@@ -5,8 +5,15 @@ import javax.swing.JOptionPane;
 public class GameOver {
 	
 	public static void main(String[] args) {
-
+String input = null;
 		boolean gameOver = false;
+		while(gameOver==false) {
+		input = JOptionPane.showInputDialog("Is the game over?");
+			
+				if(input.equals("yes")) {
+					gameOver = true;
+				}
+		
 		
 		// 1. Ask the user if the game is over and save their answer.
 		
@@ -18,5 +25,6 @@ public class GameOver {
 		// 4. Tell the user the game is over outside the while loop.
 		
 	}
-
-}
+JOptionPane.showMessageDialog(null, "THE END");
+System.exit(0);
+} }

@@ -8,11 +8,25 @@ public class StarStudent {
 		
 		// booleans may be passed as parameters in method calls just like an
 		// an int or any other kind of value. 
-		
+	/*
+		int d1 = 1;
+		int d2 = 1;
+		int dd1 = 0;
+		int dd2  =0;
+		while(true) {
+		System.out.println(d1);
+		System.out.println(d2);
+		dd1 = d1 + d2;
+		dd2 = dd1 + d2;
+		d1 = dd1;
+		d2 = dd2;
+		if(d1<1) {
+			System.exit(0);
+		} */
 		// 1. Initialize passedExam to a value.
-
-		boolean passedExam;
 		
+		 boolean passedExam=!true;
+		didYouPass(passedExam);
 		// 2. Call the didYouPass method with the variable you just initialized
 		//    as the parameter so that it shows a pop-up.
 		
@@ -22,8 +36,10 @@ public class StarStudent {
 		// 3. Use a ! on the boolean variable in either your method call or in 
 		//    the didYouPass method itself to get the other pop-up to show 
 		//    without changing the original value you gave to passedExam.
-		
+		  
+		 
 	}
+	
 	
 	public static void didYouPass(boolean passedExam) {
 		
