@@ -57,8 +57,44 @@ public class GooglyEyes extends PApplet {
 
     @Override
     public void draw() {
+    	background(face);
+    	int rightPupilX = mouseX;
+    	int rightPupilY = mouseY;
+    	if(rightPupilX>493) {
+    		rightPupilX=493;
+    	}
+    	if(rightPupilX<433) {
+    		rightPupilX = 433;
+    	}
+    	if(rightPupilY<276) {
+    		rightPupilY = 276;
+    	}
+    	if(rightPupilY>336) {
+    		rightPupilY = 336;
+    	}
+    	
+    	int leftPupilX = mouseX;
+    	int leftPupilY = mouseY;
+    	if(leftPupilX>381) {
+    		leftPupilX=381;
+    	}
+    	if(leftPupilX<321) {
+    		leftPupilX = 321;
+    	}
+    	if(leftPupilY<276) {
+    		leftPupilY = 276;
+    	}
+    	if(leftPupilY>336) {
+    		leftPupilY = 336;
+    	}
+    	
     	fill(255,255,255);
     	ellipse(463,306,100,100);
+    	ellipse(351,307,100,100);
+    	
+    	fill(0,0,0);
+    	ellipse(leftPupilX,leftPupilY,40,40);
+    	ellipse(rightPupilX,rightPupilY,40,40);
     	//right = 463, 306 left = 351, 307
     }
 
